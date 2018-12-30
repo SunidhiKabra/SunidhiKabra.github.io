@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
@@ -16,40 +18,72 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .margin15{margin-top: 15px}
 .panel-height {height: 170px;
 }
-
+.navbar {
+    margin-bottom: 0;
+	margin-left: 0 !important;
+    background-color: #616161;
+    z-index: 9999;
+    border: 0;
+    font-size: 18px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+	margin-left: 0 !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #616161 !important;
+    background-color: #fff !important;
+	margin-left: 0 !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+	margin-left: 0 !important;
+  }
+  .navbar-collapse{
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+  }
+  .container{
+	padding-left: 0 !important;
+	margin-left: 0 !important;	
+  }
+  .progress.active .progress-bar {
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+  .alignRight{
+	align: right;
+  }
+		
 </style>
-<body>
+<body id="myPortfolio" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-dark-grey w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#about_me" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
-    <a href="#skills" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Skills</a>
-	<a href="#education" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Education</a>
-    <a href="#experience" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Experience</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Projects</a>
-	<a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact</a>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+		<li><a href="#home">Home</a></li>
+        <li><a href="#about_me">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#about_me" class="w3-bar-item w3-button w3-padding-large">About Me</a>
-    <a href="#skills" class="w3-bar-item w3-button w3-padding-large">Skills</a>
-	<a href="#education" class="w3-bar-item w3-button w3-padding-large">Education</a>
-    <a href="#experience" class="w3-bar-item w3-button w3-padding-large">Experience</a>
-    <a href="#projects" class="w3-bar-item w3-button w3-padding-large">Projects</a>
-	<a href="#contact" class="w3-bar-item w3-button w3-padding-large">Contact</a>
-  </div>
-</div>
+</nav>
 
 <!-- Header -->
 <div id="home">
 <header class="w3-container w3-black w3-center" style="padding:130px 16px">
   <h1 class="w3-margin w3-text-grey">I am</h1>
   <h1 class="w3-margin w3-jumbo">SUNIDHI KABRA.</h1>
-    <h3 class="w3-margin">Mobile and Web Developer</h3>
+    <h3 class="w3-margin">Software Developer</h3>
    <h3 class="w3-margin w3-text-grey">(Master of Science in Computer Science)</h3>
   <br><br><br>
   <a href="#about_me">More About Me</a>
@@ -74,7 +108,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 	</div>
 
     <div class="w3-third w3-center w3-padding-64 w3-padding">
-		<img src="Formals.jpg" alt="Sunidhi" class="w3-image" width="992" height="1108">
+		<img src="https://drive.google.com/uc?id=1aOtXBvkwje4uq6rMgXVVtyJTlDAWFXIM" alt="Sunidhi" class="w3-image" width="992" height="1108">
     </div>
   </div>
 </div>
@@ -83,39 +117,87 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div id= skills class="w3-row-padding w3-grey w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-container">
-      <h1><b>Skills</b></h1>
-	<p class="w3-wide margin15">Java</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:95%"><p style="margin-left:95%">95%</p></div>
-    </div>
-    <p class="w3-wide margin15">C & C++</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:95%"><p style="margin-left:95%">95%</p></div>
-    </div>
-	<p class="w3-wide margin15">Nodejs</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:100%">100%</p></div>
-    </div>
-    <p class="w3-wide margin15">HTML5</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:95%">100%</p></div>
-    </div>
-	<p class="w3-wide margin15">CSS</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:95%">100%</p></div>
-    </div>
-	<p class="w3-wide margin15">Bootstrap</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:95%">100%</p></div>
-    </div>
-	<p class="w3-wide margin15">JavaScript</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:95%">100%</p></div>
-    </div>
-	<p class="w3-wide margin15">SQL</p>
-    <div class="w3-white">
-      <div class="w3-black" style="height:20px;width:100%"><p style="margin-left:95%">100%</p></div>
-    </div>
+		<h1>
+			<b>
+				Skills
+			</b>
+		</h1>
+		<p class="w3-wide margin15">Java</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar1" style="height:20px;width:0%">
+				<p style="margin-left:95%">95%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">C & C++</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar2" style="height:20px;width:0%">
+				<p style="margin-left:95%">95%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">Node JS</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar3" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">Android (Java)</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar4" style="height:20px;width:0%">
+				<p style="margin-left:95%">90%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">iOS (Swift)</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar5" style="height:20px;width:0%">
+				<p style="margin-left:95%">80%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">HTML5</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar6" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">CSS</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar7" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">Bootstrap</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar8" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">JavaScript</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar9" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">SQL</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar10" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
+		<br>
+		<p class="w3-wide margin15">Mongo DB</p>
+		<div class="w3-white">
+			<div class="w3-black progress-bar11" style="height:20px;width:0%">
+				<p style="margin-left:95%">100%</p>
+			</div>
+		</div>
 	</div>
   </div>
 </div>
@@ -127,8 +209,9 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <h1><b>Education</b></h1>
 	  <h4><b>University of North Carolina at Charlotte</b></h4>
 		<h5>Master of Science in Computer Science<h5>
-		<h5>CGPA: 3.76/4.0</h5>
+		<h5>CGPA: 3.8/4.0</h5>
         <h6 class="w3-text-black"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - <span class="w3-tag w3-black w3-round">Current</span></h6></h6>
+		<h6 class="w3-text-black"><span class="w3-tag w3-black w3-round">Expected Graduation- May 2019</span></h6>
         <hr>
 		<h4><b>Acropolis Institute of Technology and Research</b></h4>
 		<h5>Bachelor of Engineering in Computer Science and Engineering<h5>
@@ -189,7 +272,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
   <div style="text-align:center" class="w3">
     <button class="w3-button w3-black w3-padding-large w3-section">
-      <a href="https://drive.google.com/open?id=1UJ5zyuYiZcy2qlSz0-z90CPTJYys55F8"> Download Resume </a>
+      <a href="https://drive.google.com/open?id=1cgKQMGF26FYKMKd3_qWzMNA1o_2XJuBr"> Download Resume </a>
     </button>
 	</div>
 </div>
@@ -199,41 +282,228 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <!--Fifth Grid-->
 <div id="projects" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
 	<div class="w3-content">
-	<div class="w3-container w3-padding-large">
-	<h1><b>Projects</b></h1>
-	<br>
-		<h3><b>University Renting<b></h3>
-		<p>A web based application to rent items inside a University.</p>
-		<p>Technologies Used: HTML5, Bootstrap, JavaScript, MVC, JAVA, MySQL, SQL Workbench, GitHub, Junit, Mockito</p>
-		<br>
-		<h3><b>Off Campus Housing<b></h3>
-		<p>A web based application for looking up places to rent for living.</p>
-		<p>Technologies Used: HTML5, Bootstrap, JavaScript, JSP, JAVA, MySQL, phpMyAdmin.</p>
-		<br>
-		<h3><b>Christmas Gift Application<b></h3>
-		<p>Mobile Application to create and maintain a list of gifts bought using Firebase to store the data.</p>
-		<p>Technologies Used: Android, Android Studio, Firebase, MySQL</p>
-		<br>
-		<h3><b>Messenger Application<b></h3>
-		<p>Mobile Application to sign up and login to chat with other users using SQLite Database.</p>
-		<p>Technologies Used: Android, Android Studio, SQLite, MySQL</p>
-		<br>
-		<h3><b>Foodista<b></h3>
-		<p>Mobile Application to take user’s location and show various food joints open near him and allow him to add reviews.</p>
-		<p>Technologies Used: Android SDK, Android Studio, MySQL, Google Maps</p>
-		<br>
-		<h3><b>Trivia<b></h3>
-		<p>Mobile Application to take a quiz with pre-stored questions in the form of JSON file and return the score at the end of the quiz.</p>
-		<p>Technologies Used: Android SDK, Android Studio, MySQLs</p>
-		<br>
-		<h3><b>Material Monitoring System<b></h3>
-		<p>A web based application to track material consumption at a construction site.</p>
-		<p>Technologies Used: HTML, Bootstrap, JSP, JAVA, MySQL.</p>
-		<br>
-		<h3><b>Edumat Services<b></h3>
-		<p>A Java based application for convenience of college students through which they can share books, sell old books, or other study material.</p>
-		<p>Technologies Used: HTML, JSP, JAVA, MySQL.</p>
-		<br>
+		<div class="w3-container w3-padding-large">
+			<h1><b>Projects</b></h1>
+			<br>
+			<h3><b>Restaurant Reservation<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A web and mobile application to make reservations at a Restaurant using the messaging service on their phone.</p>
+					<p>Technologies Used: Node js, Express, Twilio, Android, HTML5, Bootstrap, JavaScript, JWT, AJAX, Mongo DB, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/Restaurant.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Poster Swap<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A web application to create a portal for easy exchange of posters between users.</p>
+					<p>Technologies Used: Node js, Express, HTML5, Bootstrap, JavaScript, Mongo DB, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/PosterSwap.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>University Renting<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A web application to rent items inside a University.</p>
+					<p>Technologies Used: HTML5, Bootstrap, JavaScript, MVC, JAVA, MySQL, SQL Workbench, GitHub, Junit, Mockito</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/SSDI_Project_Sprint_3.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Off Campus Housing<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A web application for looking up places to rent for living.</p>
+					<p>Technologies Used: HTML5, Bootstrap, JavaScript, JSP, JAVA, MySQL, phpMyAdmin.</p>
+				</div>
+			</div>
+			<h3><b>Material Monitoring System<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A web application to track material consumption at a construction site.</p>
+					<p>Technologies Used: HTML, Bootstrap, JSP, JAVA, MySQL.</p>
+				</div>
+			</div>
+			<h3><b>Edumat Services<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>A Java based application for convenience of college students through which they can share books, sell old books, or other study material.</p>
+					<p>Technologies Used: HTML, JSP, JAVA, MySQL.</p>
+				</div>
+			</div>
+			<h3><b>Easy Evaluation<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application and web portal for easy creation of survey and evaluation of teams based on those survey using qr code.</p>
+					<p>Technologies Used: Node js, Express, Android, HTML5, Bootstrap, JavaScript, JWT, AJAX, Mongo DB, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/AutomatedEvaluation.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Photo Browsing- Android<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to create a user, login and add photos to the remote library using firebase. The user can add and delete photos.</p>
+					<p>Technologies Used: Android, Firebase, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/PhotoGallery.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Survey For Patients<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>android application and web portal for survey of Patients.</p>
+					<p>Technologies Used: Node js, Express, Android, HTML5, Bootstrap, JavaScript, JWT, AJAX, Mongo DB, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/Survey-For-Patients.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Grocery Store<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>android application which provides a list of discounted items in a grocery store based on beacons.</p>
+					<p>Technologies Used: Node js, Express, Android, HTML5, Bootstrap, JavaScript, JWT, AJAX, Mongo DB, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/AndroidBeaconDemo.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>BMI Calculator<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to calculate the BMI of the user.</p>
+					<p>Technologies Used: Android, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/BMICalculator.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>To Do List<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to create, update or delete a to do list according to user's task.</p>
+					<p>Technologies Used: Android, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/ToDoList.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Tip Calculator<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to calculate the tip to be given on the basis of the total amount of the bill.</p>
+					<p>Technologies Used: Android, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/TipCalculator.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>News Application<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to provides news updates to the user</p>
+					<p>Technologies Used: Android, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/NewsApplication.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>GPS tracker<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android application to track the location of the user using the google map service.</p>
+					<p>Technologies Used: Android, Google maps, JAVA, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/GeoLocation.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Christmas Gift Application<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android Application to create and maintain a list of gifts bought using Firebase to store the data.</p>
+					<p>Technologies Used: Android, Android Studio, Firebase, MySQL</p>
+				</div>
+			</div>
+			<h3><b>Messenger Application<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android Application to sign up and login to chat with other users using SQLite Database.</p>
+					<p>Technologies Used: Android, Android Studio, SQLite, MySQL</p>
+				</div>
+			</div>
+			<h3><b>Foodista<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android Application to take user’s location and show various food joints open near him and allow him to add reviews.</p>
+					<p>Technologies Used: Android SDK, Android Studio, MySQL, Google Maps</p>
+				</div>
+			</div>
+			<h3><b>Trivia<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>Android Application to take a quiz with pre-stored questions in the form of JSON file and return the score at the end of the quiz.</p>
+					<p>Technologies Used: Android SDK, Android Studio, MySQLs</p>
+				</div>
+			</div>
+			<h3><b>Photo Browsing- iOS<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>iOS application to create a user, login and add photos to the remote library using firebase. The user can add and delete photos.</p>
+					<p>Technologies Used: iOS, Firebase, AlamoFire, SDWebImages, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/iOSPhotoBrowsingApp.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Basic Calculator<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>iOS application to perform basic mathematical operations.</p>
+					<p>Technologies Used: iOS, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/iOSCalculatorApp.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Apps available in market<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>iOS application to retreive a list of applications and display it ina table with images.</p>
+					<p>Technologies Used: iOS, SDWebImages, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/iOSTableWithImages.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Password Generator<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>iOS application to generate passwords with specified length.</p>
+					<p>Technologies Used: iOS, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/PasswordGeneration.git">Github Repository</a>
+				</div>
+			</div>
+			<h3><b>Notes Creator<b></h3>
+			<div class="row">
+				<div class="col-sm-10">
+					<p>iOS application to create user specific notebooks and notes inside it using firebase.</p>
+					<p>Technologies Used: iOS, Firebase, Firebase Database, Firebase Storage, GitHub</p>
+				</div>
+				<div class="col-sm-2">
+					<a class="alignRight"  href="https://github.com/SunidhiKabra/iOSNotesCreation.git">Github Repository</a>
+				</div>
+			</div>
 	</div>	
   </div> 
 </div>  
@@ -256,7 +526,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 					<br>
 					Address:
 					<br>
-					9539 University Terrace Drive, Apt C, Charlotte, North Carolina, USA 28262
+					9539 University Terrace Drive, 
+					<br>
+					Charlotte, North Carolina, 
+					<br>
+					USA 28262
 				</div>
 			</div>
 		</div>
@@ -304,6 +578,50 @@ function myFunction() {
         x.className = x.className.replace(" w3-show", "");
     }
 }
+
+$(".progress-bar1").animate({
+    width: "95%"
+}, 1500);
+
+$(".progress-bar2").animate({
+    width: "95%"
+}, 1500);
+
+$(".progress-bar3").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar4").animate({
+    width: "90%"
+}, 1500);
+
+$(".progress-bar5").animate({
+    width: "80%"
+}, 1500);
+
+$(".progress-bar6").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar7").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar8").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar9").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar10").animate({
+    width: "100%"
+}, 1500);
+
+$(".progress-bar11").animate({
+    width: "100%"
+}, 1500);
 </script>
 
 </body>
